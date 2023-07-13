@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="25" />
+
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="50"
+                android:contentDescription="Scanned Image"
+                android:scaleType="fitXY"
+
+                app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="25" />
+
+
+        </LinearLayout>
+          <androidx.legacy.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        
+    />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6FAF9"
+            android:text="content" />
+
+  <androidx.legacy.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        
+    />
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:text="Open in Browser"
+            android:textColor="#FFFFFF" />
+  <androidx.legacy.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        
+    />
+
+        <Button
+            android:id="@+id/copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DEECF8"
+            android:text="copy"
+            android:textColor="#3F51B5" />
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button" />
+</LinearLayout>
